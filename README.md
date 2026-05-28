@@ -19,7 +19,7 @@
 
 ## 💰 Support
 
-**支付宝 (Alipay)**: `18559219554`
+**支付宝 (Alipay)**: `18559215921`
 
 Or scan the QR code in the extension popup.
 
