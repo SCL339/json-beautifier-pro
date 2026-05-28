@@ -1,0 +1,82 @@
+{
+  "extName": {
+    "message": "JSON Beautifier Pro - Formatter & Validator",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Format, validate, and beautify JSON with one click. Works offline with dark/light themes, history, and context menu integration.",
+    "description": "Extension description"
+  },
+  "cmdFormatJson": {
+    "message": "Format selected JSON",
+    "description": "Keyboard shortcut command description"
+  },
+  "contextMenuFormat": {
+    "message": "Format JSON",
+    "description": "Context menu item label"
+  },
+  "contextMenuValidate": {
+    "message": "Validate JSON",
+    "description": "Context menu item label for validation"
+  },
+  "formatBtn": {
+    "message": "Format",
+    "description": "Format button label"
+  },
+  "minifyBtn": {
+    "message": "Minify",
+    "description": "Minify button label"
+  },
+  "copyBtn": {
+    "message": "Copy",
+    "description": "Copy button label"
+  },
+  "copied": {
+    "message": "Copied!",
+    "description": "Copied confirmation"
+  },
+  "validJson": {
+    "message": "✅ Valid JSON",
+    "description": "Validation success message"
+  },
+  "invalidJson": {
+    "message": "❌ Invalid JSON",
+    "description": "Validation error message"
+  },
+  "placeholder": {
+    "message": "Paste or type JSON here...",
+    "description": "Editor placeholder text"
+  },
+  "historyTitle": {
+    "message": "History",
+    "description": "History section title"
+  },
+  "clearHistory": {
+    "message": "Clear All",
+    "description": "Clear history button"
+  },
+  "emptyHistory": {
+    "message": "No recent items",
+    "description": "Empty history message"
+  },
+  "autoDetected": {
+    "message": "Auto-detected JSON on this page",
+    "description": "Auto-detect notification"
+  },
+  "donateBtn": {
+    "message": "☕ Support",
+    "description": "Donate/support button"
+  },
+  "donateEmail": {
+    "message": "jsonbeautifierpro@proton.me",
+    "description": "Donation email contact"
+  },
+  "themeToggle": {
+    "message": "Toggle theme",
+    "description": "Theme toggle tooltip"
+  },
+  "errorEmpty": {
+    "message": "Please enter some JSON to format.",
+    "description": "Empty input error"
+  }
+}

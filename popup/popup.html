@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Beautifier Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="logo-icon">{ }</span>
+        <h1>JSON Beautifier Pro</h1>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" title="__MSG_themeToggle__" aria-label="__MSG_themeToggle__">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <button id="formatBtn" class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+        Format
+      </button>
+      <button id="minifyBtn" class="btn btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"/>
+        </svg>
+        Minify
+      </button>
+      <button id="copyBtn" class="btn btn-secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
+        <span id="copyLabel">Copy</span>
+      </button>
+    </div>
+
+    <div class="editor-wrapper">
+      <textarea id="jsonInput" placeholder="Paste or type JSON here..." spellcheck="false"></textarea>
+      <div id="lineNumbers" class="line-numbers" aria-hidden="true"></div>
+    </div>
+
+    <div id="statusBar" class="status-bar hidden">
+      <span id="statusMessage"></span>
+    </div>
+
+    <div id="outputSection" class="output-section hidden">
+      <div class="section-header">
+        <span>Output</span>
+        <div class="section-actions">
+          <button id="copyOutputBtn" class="icon-btn small" title="Copy output">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+      </div>
+      <pre id="jsonOutput"></pre>
+    </div>
+
+    <div id="historySection" class="history-section">
+      <div class="section-header">
+        <span>__MSG_historyTitle__</span>
+        <button id="clearHistoryBtn" class="icon-btn small text-btn">__MSG_clearHistory__</button>
+      </div>
+      <div id="historyList" class="history-list">
+        <div class="history-empty">__MSG_emptyHistory__</div>
+      </div>
+    </div>
+
+    <footer>
+      <button id="donateBtn" class="donate-btn" title="__MSG_donateBtn__">
+        ☕ __MSG_donateBtn__
+      </button>
+      <span class="version">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
